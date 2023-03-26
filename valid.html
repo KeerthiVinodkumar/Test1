@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="valid.css">
+    <script src="https://kit.fontawesome.com/88617489e4.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <div class=" body-background">
+      
+           <div class="form-container">
+            <div class="box">
+              <h2>Login Form</h2>
+      <!-- <form action="" name="myform" onsubmit="return validateform(event)"> -->
+        <div class="totolcontainer">
+          
+        <form action="" name="myform" >
+
+
+ <!-- 
+    ! username
+-->
+ <div class="div">
+ <label for="username">Username</label>
+ <i class="fa-solid fa-user"></i>
+ <i id="failure-icon" class="fa-solid fa-circle-exclamation "></i>
+ <i id="success-icon" class="fa-sharp fa-solid fa-circle-check"></i>
+        <input
+        type="text"
+        placeholder="Vinod Kumar" 
+        id="username"
+        name="fname">
+        <!-- <div class="firsticon"> -->
+        <!-- <i id="failure-icon" class="fa-solid fa-circle-exclamation "></i>
+       <i id="success-icon" class="fa-sharp fa-solid fa-circle-check"></i> -->
+      <!-- </div> -->
+       <br/>
+      <p id="usererror" class="error"></p>
+    </div>
+      <!-- 
+       ! E-mail 
+       -->
+       <div class="emailcont">
+       <label for="email">Email</label>
+       <i class="fa-solid fa-envelope"></i>
+       <i id="fail-icon" class="fa-solid fa-circle-exclamation "></i>
+       <i id="pass-icon" class="fa-sharp fa-solid fa-circle-check"></i>
+      <input
+      type="text"
+      placeholder="abc123@gmail.com"
+      id="emailid"
+      name="femail">
+    
+    <br />
+    <p id="emailerror" class="error"></p>
+  </div>
+<!-- 
+  ! Password
+ -->
+ <div>
+ <label for="password">Password</label>
+ <i class="fa-solid fa-lock"></i>
+ <i id="wrong-icon" class="fa-solid fa-circle-exclamation "></i>
+ <i id="correct-icon" class="fa-sharp fa-solid fa-circle-check"></i>
+    <input
+          type="text"
+          placeholder="Ex..Abc@123"
+          id="password"
+          name="fpassword"
+        /><br />
+        
+       
+    
+        <p id="passworderror" class="error"></p>
+      </div>
+       
+        </form>
+        <button type="submit" class="btn" value="submit" onclick="validateform(event) " >Submit</button>
+      </div>
+      </div>
+    </div>
+  </div>
+    <script src="valid.js"></script>
+</body>
+</html>
